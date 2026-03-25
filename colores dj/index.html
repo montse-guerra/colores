@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Responsivo Colorido</title>
+    <style>
+        /* Estilos base */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #33ffbe; /* Naranja vibrante */
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Contenedor principal con Flexbox */
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap; /* Permite que los elementos bajen de línea */
+        }
+
+        /* Secciones con colores diversos */
+        .barramenu {
+            background-color: #dba3ec; /* Verde lima */
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        .principal {
+            background-color: #68aef3; /* Azul intenso */
+            color: rgb(0, 0, 0);
+            flex: 3;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .infoextra {
+            background-color: #ff3388; /* Magenta */
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media Query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Apila los divs verticalmente */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Sitio Web Responsivo</h1>
+    </header>
+
+    <div class="container">
+        <div class="barramenu">
+            <h3>Menú</h3>
+            <p>Este es el lateral rosa.</p>
+        </div>
+        
+        <div class="principal">
+            <h2>Contenido Principal</h2>
+            <p>Yo soy el área azul. En pantallas grandes soy ancho, en móviles me estiro.</p>
+        </div>
+
+        <div class="infoextra">
+            <h3>Info Extra</h3>
+            <p>Un toque de rojito para variar.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Montse Guerra &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
